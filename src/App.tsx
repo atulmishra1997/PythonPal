@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Bot, Send, Settings, Sparkles, BookOpen, Trophy, Code, Play, Star, Award } from 'lucide-react';
+import { Bot, Send, Settings, Trophy, Code, Play, Star, Award } from 'lucide-react';
 import Editor from '@monaco-editor/react';
 
 type Character = {
@@ -34,7 +34,7 @@ function App() {
     { id: 2, title: 'Bug Hunter', description: 'Fixed your first error', earned: false },
     { id: 3, title: 'Loop Master', description: 'Completed a loop challenge', earned: false },
   ]);
-  const [challenges, setChallenges] = useState<Challenge[]>([
+  const [challenges  ] = useState<Challenge[]>([
     {
       id: 1,
       title: 'Hello World',
